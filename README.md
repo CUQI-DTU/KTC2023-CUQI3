@@ -16,7 +16,7 @@ This is a submission for the [Kuopio Tomography Challenge](https://www.fips.fi/K
 DTU: Technical University of Denmark, Department of Applied Mathematics and Computer Science Richard Petersens Plads Building 324 2800 Kgs. Lyngby Denmark
 
 ## Description of the algorithm
-
+**TODO: Add descriptions. This is the Eclipse_regularization branch (with otsu?)**
 We have used the provided code for the EIT image reconstruction with the following modifications:
 - The Otsu segmentation algorithm has been replaced by the Chan-Vese segmentation algorithm from scikit-image.
 - Additional generalized Tikhonov regularization has been added to penalize more when close to the missing electrodes (and boundary). The regularization matrix is a diagonal matrix. For example, for difficulty level 5, the diagonal elements mapped to image space look as in the image below:
@@ -44,13 +44,13 @@ python main.py path/to/input/files path/to/output/files difficulty
 |**d**| ![](results/04.png)	| ![](results/14.png)	|  ![](results/44.png) 	|   ![](results/74.png)	|  
 
 Scores for each phantom and difficulty 1,4 and 7:
-**TODO: ADD SCORES FOR EACH ALGORITHM**
 |   Phantom	| Level 1 	| Level 4 	| Level 7 	|
 |-----	|---	|---	|---	|
-|**a**||
-|**b**||
-|**c**||
-|**d**||
+|**a**|0.748|0.654|0.540|
+|**b**|0.736|0.601|0.528|
+|**c**|0.919|0.903|0.823|
+|**d**|0.665|0.678|0.663|
+
 Scores have been computed using our own implementation of the scoring function based on scikit learn.
 
 ## License
