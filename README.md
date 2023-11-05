@@ -16,9 +16,8 @@ This is a submission for the [Kuopio Tomography Challenge](https://www.fips.fi/K
 DTU: Technical University of Denmark, Department of Applied Mathematics and Computer Science Richard Petersens Plads Building 324 2800 Kgs. Lyngby Denmark
 
 ## Description of the algorithm
-**This is the "Otsu Eclipse" branch**
 We have used the provided code for the EIT image reconstruction with the following modifications:
-- Additional generalized Tikhonov regularization has been added to penalize more when close to the missing electrodes (and boundary). The regularization matrix is a diagonal matrix. For example, for difficulty level 5, the diagonal elements mapped to image space look as in the image below:
+- Additional generalized Tikhonov regularization has been added to penalize more when close to the missing electrodes (and boundary). The regularization matrix is a diagonal matrix. For example, for difficulty level 5, the amount of penalty added to different regions of the image, can be seen in the image below:
 ![](results/reg2.png)
 
 ## Installation instructions
